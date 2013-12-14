@@ -1,7 +1,5 @@
-# Laravel 4 Oracle (OCI8) Database Support
-
-Laravel-OCI8
-============
+This project is dead, consider using yajra/laravel-oci8
+-------------------------------------------------------
 
 This project was a fork of a dead project that i tried to make working, it worked for a while but i never tested it in production.
 
