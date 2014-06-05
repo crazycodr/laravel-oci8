@@ -126,5 +126,11 @@ class OracleGrammar extends \Illuminate\Database\Query\Grammars\Grammar {
 	{
 		return array('truncate table '.$this->wrapTable($query->from) => array());
 	}
+	
+	// override latest changes to core Grammar -- it causes problems with case sentitive table and column names
+	 protected function wrapValue($value)
+	 {
+	     return $value !== '*' ? sprintf($this->wrapper, $value) : $value;
+	 }
 
 }
